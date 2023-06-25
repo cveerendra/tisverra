@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+</head>
+<body>
+    <input type="button" value="paly" onclick="playaudio()">
+    <input type="button" value="pause" onclick="pauseaudio()">
+    <input type="button" value="loop" onclick="loopaudio()">
+    <script>
+        var adiuofile= new Audio();
+        adiuofile.src="./audioa.mp3";
+        function playaudio()
+        {
+            adiuofile.play();
+        }
+        function pauseaudio()
+        {
+            adiuofile.pause();
+        }
+        function loopaudio()
+        {
+            adiuofile=loop();
+        }
+    </script>
+    
+</body>
+</html>
